@@ -177,10 +177,21 @@ th, td {
 .site-button-container {
   display: flex;
   flex-wrap: wrap;
+  height: fit-content;
 }
 
 .site-button {
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
+}
+
+/* Absolute css fuckery */
+
+.site-button > div > div {
+  display: none;
+}
+
+.site-button > div > a {
+  display: inline-block;
 }
