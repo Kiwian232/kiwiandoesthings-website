@@ -1,7 +1,11 @@
+#main {
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
 #background, #input, #is_typing {
   border: 3px double #e06fff;
   background-color: #fffc9c;
-  cursor: url('resources/pointer.png'), default;
+  cursor: url('https://kiwiandoesthings.place/resources/pointer.png'), default;
   box-sizing: border-box;
   border-radius: 0px;
 }
@@ -12,7 +16,7 @@
 
 #top_banner, #scrollToBottom, #emojiTrayToggle {
   display: none;
-  /* #scrollToBottom is overriden width display: flex with inline css so we have to hack it */
+  /* #scrollToBottom is overriden with display: flex with inline css so we have to hack it */
   opacity: 0;
 }
 
@@ -22,7 +26,7 @@
 }
 
 .nav-button, .button, a, a:-webkit-any-link, .allMessages {
-  cursor: url('resources/hand.png'), pointer;
+  cursor: url('https://kiwiandoesthings.place/resources/hand.png'), pointer;
 }
 
 .recieved {
@@ -43,6 +47,13 @@
 
 .senderInfo {
   font-family: "PixiFontBDF", "PixiFontTTF", "Rockwell", "Arial";
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.msgBody {
+  font-family: "PixiFontBDF", "PixiFontTTF", "Rockwell", "Arial";
+  font-size: 18px;
 }
 
 #input:empty::before {
@@ -60,19 +71,19 @@
 }
 
 .allMessages {
-  max-width: 70%;
-  min-width: 70%;
+  max-width: 60%;
+  min-width: 60%;
   flex-direction: column;
-  display: flex;
+  display: inline-flex;
   box-sizing: border-box;
 }
 
 @font-face {
     font-family: 'PixiFontBDF';
-    src: url('resources/PixiFont.bdf') format('bdf');
+    src: url('https://kiwiandoesthings.place/resources/PixiFont.bdf') format('bdf');
 }
 
 @font-face {
     font-family: 'PixiFontTTF';
-    src: url('resources/PixiFont.ttf') format('truetype');
+    src: url('https://kiwiandoesthings.place/resources/PixiFont.ttf') format('truetype');
 }
