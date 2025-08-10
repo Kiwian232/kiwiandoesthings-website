@@ -1,0 +1,78 @@
+#background, #input, #is_typing {
+  border: 3px double #e06fff;
+  background-color: #fffc9c;
+  cursor: url('https://kiwian.neocities.org/resources/pointer.png'), default;
+  box-sizing: border-box;
+  border-radius: 0px;
+}
+
+#input {
+  width: 100%
+}
+
+#top_banner, #scrollToBottom, #emojiTrayToggle {
+  display: none;
+  /* #scrollToBottom is overriden width display: flex with inline css so we have to hack it */
+  opacity: 0;
+}
+
+#is_typing {
+  width: 33px;
+  height: 13px;
+}
+
+.nav-button, .button, a, a:-webkit-any-link, .allMessages {
+  cursor: url('https://kiwian.neocities.org/resources/hand.png'), pointer;
+}
+
+.recieved {
+  border: 3px double #e06fff;
+  background-color: #fffc9c;
+  float: left;
+  margin-right: 100%;
+  align-items: flex-start;
+}
+
+.sent {
+  border: 3px double #e06fff;
+  background-color: #fffc9c;
+  float: right;
+  margin-left: 100%;
+  align-items: flex-end;
+}
+
+.senderInfo {
+  font-family: "PixiFontBDF", "PixiFontTTF", "Rockwell", "Arial";
+}
+
+#input:empty::before {
+  content: "converse.";
+}
+
+.sent#timestamp {
+  display: flex;
+  align-items: flex-end;
+}
+
+.recieved#timestamp {
+  display: flex;
+  align-items: flex-start;
+}
+
+.allMessages {
+  max-width: 70%;
+  min-width: 70%;
+  flex-direction: column;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PixiFontBDF';
+    src: url('https://kiwian.neocities.org/resources/PixiFont.bdf') format('bdf');
+}
+
+@font-face {
+    font-family: 'PixiFontTTF';
+    src: url('https://kiwian.neocities.org/resources/PixiFont.ttf') format('truetype');
+}
