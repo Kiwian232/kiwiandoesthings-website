@@ -1,7 +1,7 @@
 #background, #input, #is_typing {
   border: 3px double #e06fff;
   background-color: #fffc9c;
-  cursor: url('https://kiwian.neocities.org/resources/pointer.png'), default;
+  cursor: url('resources/pointer.png'), default;
   box-sizing: border-box;
   border-radius: 0px;
 }
@@ -22,7 +22,7 @@
 }
 
 .nav-button, .button, a, a:-webkit-any-link, .allMessages {
-  cursor: url('https://kiwian.neocities.org/resources/hand.png'), pointer;
+  cursor: url('resources/hand.png'), pointer;
 }
 
 .recieved {
@@ -69,10 +69,10 @@
 
 @font-face {
     font-family: 'PixiFontBDF';
-    src: url('https://kiwian.neocities.org/resources/PixiFont.bdf') format('bdf');
+    src: url('resources/PixiFont.bdf') format('bdf');
 }
 
 @font-face {
     font-family: 'PixiFontTTF';
-    src: url('https://kiwian.neocities.org/resources/PixiFont.ttf') format('truetype');
+    src: url('resources/PixiFont.ttf') format('truetype');
 }
