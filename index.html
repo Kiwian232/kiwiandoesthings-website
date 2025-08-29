@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,21 +16,25 @@
             I'm very lazy with updating this, sorry ;)
         -->
         <link rel="stylesheet" href="styles.css">
-        </head>
-        <body style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; margin: 0;">
-          <a style="display: none;" href="https://fedi.intragon.org/@kiwian"></a>
-            <div class="container" id="welcome-div-top">
-              <marquee class="text" scrollamount="14" behavior="alternate" bgcolor="#eebbfc" onmouseover="this.stop();" onmouseout="this.start();">Welcome to the Kiwi Zone</marquee>
-              <p class="text" style="text-align: center;">
-                Hello!! This is the second website I've made. 
-                It may not function well for everyone, I only test it where I can.
-                Definitely <strong>do not come here on mobile, the site isn't made for that. </strong>
-                Thank you for being here!! Have a good time, yeah. <br> 
-                <br>
-                <a class="text button" href="pages/home.html">Click here to enter!</a>
-              </p>
-            </div>
-            
-            <div class="container center-content" id="welcome-div-bottom"><img src="resources/welcome_image.png" style="border: 2px black solid; background-color: white;"></div>
-        </body>
+        <script src="scripts.js"></script>
+    </head>
+    <body style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; margin: 0;">
+        <div class="container" id="welcome-div-top">
+          <marquee class="text" scrollamount="14" behavior="alternate" bgcolor="#eebbfc" onmouseover="this.stop();" onmouseout="this.start();">Welcome to the Kiwi Zone</marquee>
+          <p class="text" style="text-align: center;">
+            Hello!! This is the second website I've made. 
+            It may not function well for everyone, I only test it where I can.
+            Definitely <strong>do not come here on mobile, the site isn't made for that. </strong>
+            Thank you for being here!! Have a good time, yeah. <br> 
+            <br>
+            <a class="text button" href="pages/home.html">Click here to enter!</a>
+            <!--<p class="text" style="text-align: center;">Enter the password to proceed to the site!</p>
+            <form onsubmit="redirect(event); return false;">
+              <input class="input text" id="site-password" style="margin-left: auto; margin-right: auto; display: block;" maxlength="15">
+            </form>
+            <p class="text" style="font-size: 16px; text-align: center;">P.S. If you know the password, don't share it unless you ask first pleas!</p>-->
+          </p>
+        </div> 
+        <div class="container center-content" id="welcome-div-bottom"><img src="resources/welcome_image.png" style="border: 2px black solid; background-color: white;"></div>
+    </body>
 </html>

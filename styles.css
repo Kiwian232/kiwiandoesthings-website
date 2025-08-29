@@ -58,14 +58,32 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.input {
+  border: 3px double #e06fff;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.4);
+  background-color: #fffc9c;
+  cursor: text;
+  text-align: center;
+}
+
+.input:focus {
+  border: 3px double #a386fa;
+  outline: none;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.input:hover {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
 .site-button {
   width: 88px;
   height: 31px;
   display: table-row;
-}
-
-.button:hover {
-  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.6);
 }
 
 .center-content {
