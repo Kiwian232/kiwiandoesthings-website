@@ -4,6 +4,7 @@ body {
     background-repeat: repeat;
     image-rendering: pixelated;
     cursor: url('resources/pointer.png'), default;
+	-webkit-font-smoothing: none;
 }
 
 .nav-button, .button, a, a:-webkit-any-link {
@@ -46,9 +47,11 @@ img {
 }
 
 .text {
-  margin: 10px 10px;
-  font-size: 24px;
-  font-family: "PixiFontBDF", "PixiFontTTF", "Rockwell", "Arial";
+	margin: 10px 10px;
+ 	font-size: 24px;
+ 	font-family: "PixiFontBDF", "PixiFontTTF", "Rockwell", "Arial";
+  	-webkit-font-smoothing: none;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .button {
@@ -78,12 +81,6 @@ img {
 
 .input:hover {
   box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.6);
-}
-
-.site-button {
-  width: 88px;
-  height: 31px;
-  display: table-row;
 }
 
 .center-content {
@@ -122,6 +119,7 @@ img {
   text-decoration: none;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
   flex-shrink: 1;
+  font-family: "PixiFontBDF", "PixiFontTTF"
 }
 
 .nav-selected {
@@ -187,29 +185,51 @@ table {
 }
         
 th, td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+  	padding: 12px;
+  	text-align: left;
+  	border-bottom: 1px solid #ddd;
 }
 
 .site-button-container {
-  display: flex;
-  flex-wrap: wrap;
-  height: fit-content;
+  	display: flex;
+ 	flex-wrap: wrap;
+ 	height: fit-content;
 }
 
 .site-button {
-  flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
+  	align-items: center;
+	width: 88px;
+  	height: 31px;
+  	display: table-row;
 }
 
 /* Absolute css fuckery */
 
 .site-button > div > div {
-  display: none;
+  	display: none;
 }
 
 .site-button > div > a {
-  display: inline-block;
+  	display: inline-block;
+}
+
+.slut img {
+	width: 50px;
+	height: 50px;
+}
+
+#comic-container {
+	width: 940px;
+	background-color: #c6c6c6;
+}
+
+#comic-header {
+	width: 940px;
+	height: 24px;
+	background-color: #535353;
+}
+
+.comic-header a {
+	padding: 0px;
+	margin: 0px;
 }
